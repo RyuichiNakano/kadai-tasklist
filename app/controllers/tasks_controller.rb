@@ -51,7 +51,8 @@ end
  private
 
   # Strong Parameter
-
+　def set_task
+　  @task = Task.find(params[:id])
   def task_params
     params.require(:task).permit(:content, :status)
   end
